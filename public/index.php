@@ -30,6 +30,15 @@
         case '/about':
             view('about');
             break;
+        case '/blog':
+            view('blog');
+            break;
+        case '/single-blog':
+            view('singleBlog');
+            break;
+        case '/single-service':
+            view('singleService');
+            break;
         default:
             die('Page not found');
     }

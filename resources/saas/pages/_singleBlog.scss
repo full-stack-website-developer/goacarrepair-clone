@@ -1,0 +1,79 @@
+.blog-section {
+    padding-top: 4.8%;
+    margin-bottom: 20px;
+
+    .date{
+        font-size: 16px;
+        color: $primary-color;
+    }
+
+    .main-heading {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .image {
+        img {
+            width: 100%;
+        }
+    }
+
+    h2 {
+        font-size: 26px;
+        font-weight: bold;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: justify;
+    }
+
+    ul {
+        padding: 0px 12px;
+
+        li {
+            margin-bottom: 4px;
+        }
+    }
+}
+
+.reply-section {
+
+    .comment-form {
+
+        
+        div {
+            
+            label {
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            input,
+            textarea {
+                font-size: 20px;
+                padding-bottom: 20px;
+                margin-bottom: 22px;
+            }
+        }
+
+        .btn-post {
+            text-align: right;
+            
+            button {
+                padding: 20px 50px;
+                background-color: #0F1436;
+                font-weight: $normal-bold;
+                color: white;
+
+                &:hover {
+                    background-color: white;
+                    color: #0F1436;
+                }
+            }
+        }
+    }
+}

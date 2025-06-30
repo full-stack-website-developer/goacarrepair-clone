@@ -1,0 +1,151 @@
+.single-service-page-header-starter {
+    padding-top: 4.8%;
+
+    .header-starter-container {
+        background: url(https://www.goacarrepair.com/upload/bannerimage/992a0f0542384f1ee5ef51b7cf4ae6c4.webp) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center center !important;
+        
+        h2 {
+            font-weight: bold;
+            font-size: 4rem;
+            color: white;
+        }
+
+        button {
+            font-weight: bold;
+            color: $secondary-color;
+            font-size: 1rem;
+            border: 1px solid $secondary-color;
+
+            &:hover {
+                background-color: $secondary-color;
+                color: white;
+            }
+        }
+    }
+
+}
+
+.flawless-finish {
+    .container {
+        h2 {
+            font-size: calc(1.325rem + 0.9vw);
+            font-weight: 700;
+        }
+    
+        .paragraph {
+            text-align: justify;
+            color: #596277;
+            font-size: 17px;
+        }
+    
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            .service {
+                .about {
+                    a {
+                        text-decoration: none;
+                    }
+                }
+        
+                button {
+                    border-bottom: 1px solid #dee2e6 !important;
+                }
+            }
+        
+            .heading {
+                i {
+                    color: #0f1436 !important;
+                    font-weight: 900;
+                    font-size: 25px;
+                }
+            }
+        
+            h5 {
+                font-size: 1.25rem;
+                font-weight: 700;
+            }
+        
+            .about {
+                color: #596277;
+            }
+        
+            p {
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .service {
+                display: flex;
+                flex-direction: column;
+                width: 48%;
+                padding: 1.5rem;
+                background-color: #f2f2f2;
+            
+                button {
+                    text-align: justify;
+                }
+            
+                h4 {
+                    font-size: 30px;
+                    font-weight: 700;
+                }
+                
+            }
+        }
+
+        .services-container {
+            .service {
+                display: flex;
+                flex-direction: column;
+                width: 48%;
+                padding: 1.5rem;
+                transition: background-color 0.5s ease, color 0.5s ease;
+            
+                button {
+                    text-align: justify;
+                }
+            
+                h4 {
+                    font-size: 30px;
+                    font-weight: 700;
+                }
+            
+                &:hover {
+                    background-color: #0f1436;
+                    color: white;
+                }
+            }
+        }
+        
+        .below-card {
+            > p {
+                margin-bottom: 1rem;
+            }
+        }
+    
+        .cars-banner {
+            img {
+                vertical-align: middle;
+                margin-top: 5px;
+            }
+        }
+    
+        .questions {
+            h2 {
+                margin-top: 50px;
+                text-align: center;
+            }
+        }
+    }
+}
+    
+
+      

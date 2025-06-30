@@ -676,4 +676,238 @@ footer .compay-name {
   font-weight: bold;
   font-size: 18px;
   color: #0B2154;
+}
+
+.blogs-section {
+  padding-top: 4.8%;
+  margin-bottom: 20px;
+}
+.blogs-section .main-heading {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.blogs-section .blogs-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.blogs-section .blogs-container .blog {
+  width: 23%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.blogs-section .blogs-container .blog .image img {
+  width: 100%;
+  border-radius: 10px;
+}
+.blogs-section .blogs-container .blog .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  height: 50px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.blogs-section .blogs-container .blog .details-group {
+  display: flex;
+  gap: 10px;
+}
+.blogs-section .blogs-container .blog .details-group .logo {
+  width: 16%;
+}
+.blogs-section .blogs-container .blog .details-group .logo img {
+  width: 100%;
+  border-radius: 50%;
+}
+.blogs-section .blogs-container .blog .details-group .detail p {
+  margin-bottom: 0;
+}
+.blogs-section .blogs-container .blog .details-group .detail div {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.review-section .review-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Show only 3 lines */
+  -webkit-box-orient: vertical;
+  font-style: italic;
+}
+.review-section .review-icon {
+  font-weight: bold;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-section {
+  padding-top: 4.8%;
+  margin-bottom: 20px;
+}
+.blog-section .date {
+  font-size: 16px;
+  color: #596277;
+}
+.blog-section .main-heading {
+  font-size: 30px;
+  font-weight: bold;
+}
+.blog-section .image img {
+  width: 100%;
+}
+.blog-section h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.blog-section p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+.blog-section ul {
+  padding: 0px 12px;
+}
+.blog-section ul li {
+  margin-bottom: 4px;
+}
+
+.reply-section .comment-form div label {
+  font-size: 18px;
+  font-weight: 600;
+}
+.reply-section .comment-form div input,
+.reply-section .comment-form div textarea {
+  font-size: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 22px;
+}
+.reply-section .comment-form .btn-post {
+  text-align: right;
+}
+.reply-section .comment-form .btn-post button {
+  padding: 20px 50px;
+  background-color: #0F1436;
+  font-weight: 600;
+  color: white;
+}
+.reply-section .comment-form .btn-post button:hover {
+  background-color: white;
+  color: #0F1436;
+}
+
+.single-service-page-header-starter {
+  padding-top: 4.8%;
+}
+.single-service-page-header-starter .header-starter-container {
+  background: url(https://www.goacarrepair.com/upload/bannerimage/992a0f0542384f1ee5ef51b7cf4ae6c4.webp) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+.single-service-page-header-starter .header-starter-container h2 {
+  font-weight: bold;
+  font-size: 4rem;
+  color: white;
+}
+.single-service-page-header-starter .header-starter-container button {
+  font-weight: bold;
+  color: #0B2154;
+  font-size: 1rem;
+  border: 1px solid #0B2154;
+}
+.single-service-page-header-starter .header-starter-container button:hover {
+  background-color: #0B2154;
+  color: white;
+}
+
+.flawless-finish .container h2 {
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 700;
+}
+.flawless-finish .container .paragraph {
+  text-align: justify;
+  color: #596277;
+  font-size: 17px;
+}
+.flawless-finish .container .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.flawless-finish .container .cards-container .service .about a {
+  text-decoration: none;
+}
+.flawless-finish .container .cards-container .service button {
+  border-bottom: 1px solid #dee2e6 !important;
+}
+.flawless-finish .container .cards-container .heading i {
+  color: #0f1436 !important;
+  font-weight: 900;
+  font-size: 25px;
+}
+.flawless-finish .container .cards-container h5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.flawless-finish .container .cards-container .about {
+  color: #596277;
+}
+.flawless-finish .container .cards-container p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.flawless-finish .container .cards-container .service {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  padding: 1.5rem;
+  background-color: #f2f2f2;
+}
+.flawless-finish .container .cards-container .service button {
+  text-align: justify;
+}
+.flawless-finish .container .cards-container .service h4 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.flawless-finish .container .services-container .service {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  padding: 1.5rem;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+.flawless-finish .container .services-container .service button {
+  text-align: justify;
+}
+.flawless-finish .container .services-container .service h4 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.flawless-finish .container .services-container .service:hover {
+  background-color: #0f1436;
+  color: white;
+}
+.flawless-finish .container .below-card > p {
+  margin-bottom: 1rem;
+}
+.flawless-finish .container .cars-banner img {
+  vertical-align: middle;
+  margin-top: 5px;
+}
+.flawless-finish .container .questions h2 {
+  margin-top: 50px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
