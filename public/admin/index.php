@@ -18,6 +18,9 @@
         case '/admin/services':
             view('/admin/services/show');
             break;
+        case '/admin/services/create':
+            view('/admin/services/create');
+            break;
         default:
             die('Page not Found');
     }
