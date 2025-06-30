@@ -12,9 +12,6 @@
     $url = $_SERVER['REQUEST_URI'];
 
     switch ($url) {
-        case str_starts_with($url, '/admin'):
-            require_once('adminRoutes.php');
-            break;
         case '/': 
             view('home');
             break;
