@@ -1,0 +1,41 @@
+.text-center {
+    text-align: center;
+}
+
+.carousel-icon {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.w-45 {
+    width: 45%;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.active {
+    background-color: $secondary-color !important;
+    color: white !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.pb-3rem {
+    padding-bottom: 5rem;
+}
+
+.pt-3rem {
+    padding-top: 5rem;
+}
+
+.t-primary {
+    color: $primary-color;
+}
+
+.t-secondary {
+    color: $secondary-color;
+}

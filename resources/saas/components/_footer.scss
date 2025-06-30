@@ -1,0 +1,60 @@
+footer {
+  background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url(https://www.goacarrepair.com/assets/img/carousel-bg-1.jpg) center center no-repeat;
+
+  ul {
+    padding-left: 0px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+    .footerbox {
+      margin-top: 40px;
+      width: 220px;
+
+      h4 {
+        font-size: 25px;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+      li {
+        padding-bottom: 15px;
+        list-style-type: none;
+        padding-left: 7px;
+        font-size: 13px;
+      }
+    }
+
+    .footer-box1,
+    .footer-box2 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  .copy-rights {
+    border-top: 1px solid rgba(256, 256, 256, 0.1);
+    margin-top: 20px;
+    color: white;
+    padding: 25px 0;
+    font-size: 15px;
+  }
+
+  .compay-name {
+    text-decoration: underline;
+  }
+}
+  
+  
+  

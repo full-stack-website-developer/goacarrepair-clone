@@ -1,0 +1,60 @@
+.gallery-page-header-starter {
+    padding-top: 4.8%;
+    margin-bottom: 20px;
+
+    .header-starter-container {
+        background: url(https://www.goacarrepair.com/upload/bannerimage/2767cc3ede7592a47bd6657e3799565c.webp) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center center !important;
+
+        .container {
+            padding-top: 7rem;
+            padding-bottom: 6rem;
+
+            h2 {
+                font-weight: bold;
+                font-size: 4rem;
+                color: white;
+            }
+    
+            button {
+                font-weight: bold;
+                color: $secondary-color;
+                font-size: 1rem;
+                border: 1px solid $secondary-color;
+    
+                &:hover {
+                    background-color: $secondary-color;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.gallery-section {
+    .container {
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            font-weight: bold;
+            margin: 2.5rem 0;
+        }
+
+        .images-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        
+            .image {
+                width: 33%;
+                padding: 10px;
+        
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,366 @@
+.carousel-section {
+    padding-top: 4%;
+    
+    .carousel-caption {
+        color: $secondary-color;
+        font-weight: bold;
+    
+        h6 {
+            font-size: 18px;
+        }
+    
+        p {
+            font-size: 70px;
+            line-height: normal;
+        }
+    
+        .btn-group {
+            flex-direction: column;
+            gap: 20px;
+            
+            button {
+                width: auto !important;
+                background-color: $secondary-color;
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.service-form-section {
+    background-color: #0F1436;
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        padding: 5% 0%;
+        
+        h2 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .quote-form{
+
+            select {
+                padding: .375rem .75rem;
+            }
+
+            .btn-quote {
+                text-align: center;
+                
+                button {
+                    padding: 20px 50px;
+                    background-color: #0F1436;
+                    font-weight: $normal-bold;
+                    color: white;
+                    border: 1px solid white;
+
+                    &:hover {
+                        background-color: white;
+                        color: #0F1436;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.offer-service-section {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        h2 {
+            color: $secondary-color;
+        }
+    
+        p {
+            color: $primary-color;
+        }
+    }
+    
+
+    .services-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+        .service {
+            display: flex;
+            padding: 20px;
+            gap: 10px;
+            width: 32%;
+            background-color: #F2F2F2;
+
+            .image {
+                width: 20%;
+            }
+
+            .about {
+
+                .title {
+                    font-weight: bold;
+                    font-size: 18px;
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+.special-client-offers-section{
+    display: flex;
+    justify-content: center;
+
+    .special-client-offers {
+
+        h2 {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            color: $secondary-color;
+        }
+
+        .offers {
+            display: flex;
+            justify-content: space-around;
+
+            .offer {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+
+
+                img {
+                    width: 50%;
+                    -webkit-filter: brightness(0) saturate(100%) invert(9%) sepia(16%) saturate(5726%) hue-rotate(213deg) brightness(90%) contrast(101%);
+                            filter: brightness(0) saturate(100%) invert(9%) sepia(16%) saturate(5726%) hue-rotate(213deg) brightness(90%) contrast(101%);
+                }
+
+                h4 {
+                    font-size: 14px;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+}
+
+.statistics-section {
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(https://www.goacarrepair.com/assets/img/carousel-bg-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .statistics {
+        display: flex;
+        justify-content: space-around;
+
+        .statistic {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+
+            span, i {
+                font-weight: bolder;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+.brands-section {
+    .brands {
+        
+        h2 {
+            font-weight: bolder;
+        }
+
+        .mySwiper {
+
+            .swiper-wrapper {
+                margin-bottom: 30px;
+                
+                .swiper-slide {
+                    width: 20% !important;
+                    margin-right: 0px !important;
+                    display: flex;
+                    justify-content: center;
+    
+                    img {
+                        border: 30px solid #F2F2F2;
+                    }
+                }
+            }
+
+        }
+
+
+        .arrows {
+          display: flex;
+          gap: 40px;
+          justify-content: center;
+    
+          div {
+              position: relative;
+              margin-top: 0;
+              background-color: #0F1436;
+              padding: 0px 25px;
+    
+              &::after { 
+                  font-size: 20px;
+                  color: white;
+              }
+          }
+      }
+    }
+
+
+}
+
+.abu-dhabi-workshop {
+
+    .abu-dhabi-workshop h1 {
+        color: #0f1436;
+        margin: 1.5rem 0 1.5rem 0;
+        font-size: calc(1.325rem + 0.9vw);
+        text-align: start;
+      }
+      
+      .text-container {
+        text-align: justify;
+      }
+      .abu-dhabi-workshop p {
+        color: #596277;
+        margin-bottom: 1rem;
+        line-height: 22px;
+      }
+}
+
+.choose-us {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+
+    h2 {
+        margin: 4rem 0 2.5rem 0;
+        color: #0f1436;
+        text-align: center;
+        font-size: calc(1.325rem + 0.9vw);
+    }
+    
+    .list {
+        display: flex;
+        align-items: flex-start;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .icon {
+        border: 1px solid #dee2e6 !important;
+        border-radius: 50%;
+        height: 27px;
+        width: 27px;
+        padding: 5px;
+        font-size: 15px;
+    }
+    
+    p {
+        color: #596277;
+        margin-bottom: 0;
+    }
+}
+  
+.explore-services {
+    .container {
+
+        h3 {
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .services {
+            display: flex;
+            gap: 20px;
+
+            .services-list {
+                width: 40%;
+
+                ul {
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 100%;
+
+                    .list-item {
+                        padding: 20px 25px;
+                        font-weight: bold;
+                        font-size: 20px;
+                        list-style-type: none;
+                        background-color: #F2F2F2;
+                        display: flex;
+
+                        i {
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+
+            .service-detail {
+                display: flex;
+                gap: 20px;
+
+                .image {
+                    width: 100%;
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        -o-object-fit: cover;
+                           object-fit: cover;
+                    }
+                }
+
+                .details {
+                    width: 95%;
+
+                    .features {
+                        p {
+                            display: flex;
+                            gap: 10px;
+                        }
+                    }
+
+                    button {
+                        padding: 20px 50px;
+                        background-color: #0F1436;
+                        font-weight: $normal-bold;
+                        color: white;
+    
+                        &:hover {
+                            background-color: white;
+                            color: #0F1436;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+  
+  

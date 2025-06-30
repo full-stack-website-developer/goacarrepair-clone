@@ -1,0 +1,96 @@
+.contact-page-header-starter {
+    padding-top: 4.8%;
+    margin-bottom: 20px;
+
+    .header-starter-container {
+        background: url(https://www.goacarrepair.com/upload/bannerimage/425ff0ecbf53db5d37109e566d4f7e9e.webp) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center center !important;
+        
+        h2 {
+            font-weight: bold;
+            font-size: 4rem;
+            color: white;
+        }
+
+        button {
+            font-weight: bold;
+            color: $secondary-color;
+            font-size: 1rem;
+            border: 1px solid $secondary-color;
+
+            &:hover {
+                background-color: $secondary-color;
+                color: white;
+            }
+        }
+    }
+
+}
+
+.contact-form {
+
+    .container {
+
+        h3 {
+            font-size: 35px;
+        }
+        
+        .info {
+            display: flex;
+
+            div {
+                background-color: $light-bg;
+                flex-grow: 1;
+                padding: 20px;
+
+                h4 {
+                    font-weight: bold;
+                    font-size: 22px;
+                }
+
+                p {
+                    color: $primary-color;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .form-container {
+            display: flex;
+            gap: 30px;
+            
+            .map {
+                width: 50%;
+
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .form {
+                width: 50%;
+
+                p {
+                    color: $primary-color;
+                }
+
+                button {
+                    padding: 20px 50px;
+                    background-color: #0F1436;
+                    font-weight: $normal-bold;
+                    color: white;
+                    border: 1px solid white;
+
+                    &:hover {
+                        background-color: white;
+                        color: #0F1436;
+                        border: 1px solid $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+}

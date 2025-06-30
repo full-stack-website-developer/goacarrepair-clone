@@ -1,0 +1,679 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f8f9fa;
+  color: #0B2154;
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.carousel-icon {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.active {
+  background-color: #0B2154 !important;
+  color: white !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.pb-3rem {
+  padding-bottom: 5rem;
+}
+
+.pt-3rem {
+  padding-top: 5rem;
+}
+
+.t-primary {
+  color: #596277;
+}
+
+.t-secondary {
+  color: #0B2154;
+}
+
+header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+header .nav-container {
+  display: flex;
+  height: 90px;
+  max-width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 0px #596277;
+}
+header .nav-container .main-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 160px;
+  height: 80px;
+}
+header .nav-container .main-logo img {
+  width: 110px;
+  height: 80px;
+  align-items: center;
+  padding-right: 10px;
+}
+header .nav-container .nav-menu {
+  width: 715px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+header .nav-container .nav-menu ul {
+  display: flex;
+  gap: 2rem;
+  color: white;
+  margin-bottom: 0px;
+}
+header .nav-container .nav-menu ul li {
+  font-weight: 500;
+  color: #0f1436;
+  list-style: none;
+}
+header .nav-container .nav-menu a {
+  text-decoration: none;
+  color: #0f1436;
+  font-weight: bold;
+}
+header .nav-container .header-btn {
+  margin-left: 15px;
+  cursor: pointer;
+  border: 1px solid #878db1;
+  background-color: #0B2154;
+  padding: 15px;
+  color: white !important;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+header .nav-container .header-btn:hover {
+  background-color: white;
+  color: #0B2154 !important;
+  transition: 5ms;
+}
+
+footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(https://www.goacarrepair.com/assets/img/carousel-bg-1.jpg) center center no-repeat;
+}
+footer ul {
+  padding-left: 0px;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+footer .footer-container .footerbox {
+  margin-top: 40px;
+  width: 220px;
+}
+footer .footer-container .footerbox h4 {
+  font-size: 25px;
+}
+footer .footer-container .footerbox a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer-container .footerbox p {
+  margin-bottom: 0;
+}
+footer .footer-container .footerbox li {
+  padding-bottom: 15px;
+  list-style-type: none;
+  padding-left: 7px;
+  font-size: 13px;
+}
+footer .footer-container .footer-box1,
+footer .footer-container .footer-box2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .copy-rights {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+  color: white;
+  padding: 25px 0;
+  font-size: 15px;
+}
+footer .compay-name {
+  text-decoration: underline;
+}
+
+.carousel-section {
+  padding-top: 4%;
+}
+.carousel-section .carousel-caption {
+  color: #0B2154;
+  font-weight: bold;
+}
+.carousel-section .carousel-caption h6 {
+  font-size: 18px;
+}
+.carousel-section .carousel-caption p {
+  font-size: 70px;
+  line-height: normal;
+}
+.carousel-section .carousel-caption .btn-group {
+  flex-direction: column;
+  gap: 20px;
+}
+.carousel-section .carousel-caption .btn-group button {
+  width: auto !important;
+  background-color: #0B2154;
+  color: white;
+  font-weight: bold;
+}
+
+.service-form-section {
+  background-color: #0F1436;
+}
+.service-form-section .form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 5% 0%;
+}
+.service-form-section .form-container h2 {
+  text-align: center;
+  font-weight: bold;
+}
+.service-form-section .form-container .quote-form select {
+  padding: 0.375rem 0.75rem;
+}
+.service-form-section .form-container .quote-form .btn-quote {
+  text-align: center;
+}
+.service-form-section .form-container .quote-form .btn-quote button {
+  padding: 20px 50px;
+  background-color: #0F1436;
+  font-weight: 600;
+  color: white;
+  border: 1px solid white;
+}
+.service-form-section .form-container .quote-form .btn-quote button:hover {
+  background-color: white;
+  color: #0F1436;
+}
+
+.offer-service-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.offer-service-section .container h2 {
+  color: #0B2154;
+}
+.offer-service-section .container p {
+  color: #596277;
+}
+.offer-service-section .services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.offer-service-section .services-container .service {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  width: 32%;
+  background-color: #F2F2F2;
+}
+.offer-service-section .services-container .service .image {
+  width: 20%;
+}
+.offer-service-section .services-container .service .about .title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #0B2154;
+}
+
+.special-client-offers-section {
+  display: flex;
+  justify-content: center;
+}
+.special-client-offers-section .special-client-offers h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #0B2154;
+}
+.special-client-offers-section .special-client-offers .offers {
+  display: flex;
+  justify-content: space-around;
+}
+.special-client-offers-section .special-client-offers .offers .offer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.special-client-offers-section .special-client-offers .offers .offer img {
+  width: 50%;
+  -webkit-filter: brightness(0) saturate(100%) invert(9%) sepia(16%) saturate(5726%) hue-rotate(213deg) brightness(90%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(9%) sepia(16%) saturate(5726%) hue-rotate(213deg) brightness(90%) contrast(101%);
+}
+.special-client-offers-section .special-client-offers .offers .offer h4 {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.statistics-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://www.goacarrepair.com/assets/img/carousel-bg-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.statistics-section .statistics {
+  display: flex;
+  justify-content: space-around;
+}
+.statistics-section .statistics .statistic {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+.statistics-section .statistics .statistic span, .statistics-section .statistics .statistic i {
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.brands-section .brands h2 {
+  font-weight: bolder;
+}
+.brands-section .brands .mySwiper .swiper-wrapper {
+  margin-bottom: 30px;
+}
+.brands-section .brands .mySwiper .swiper-wrapper .swiper-slide {
+  width: 20% !important;
+  margin-right: 0px !important;
+  display: flex;
+  justify-content: center;
+}
+.brands-section .brands .mySwiper .swiper-wrapper .swiper-slide img {
+  border: 30px solid #F2F2F2;
+}
+.brands-section .brands .arrows {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.brands-section .brands .arrows div {
+  position: relative;
+  margin-top: 0;
+  background-color: #0F1436;
+  padding: 0px 25px;
+}
+.brands-section .brands .arrows div::after {
+  font-size: 20px;
+  color: white;
+}
+
+.abu-dhabi-workshop .abu-dhabi-workshop h1 {
+  color: #0f1436;
+  margin: 1.5rem 0 1.5rem 0;
+  font-size: calc(1.325rem + 0.9vw);
+  text-align: start;
+}
+.abu-dhabi-workshop .text-container {
+  text-align: justify;
+}
+.abu-dhabi-workshop .abu-dhabi-workshop p {
+  color: #596277;
+  margin-bottom: 1rem;
+  line-height: 22px;
+}
+
+.choose-us {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.choose-us h2 {
+  margin: 4rem 0 2.5rem 0;
+  color: #0f1436;
+  text-align: center;
+  font-size: calc(1.325rem + 0.9vw);
+}
+.choose-us .list {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.choose-us .icon {
+  border: 1px solid #dee2e6 !important;
+  border-radius: 50%;
+  height: 27px;
+  width: 27px;
+  padding: 5px;
+  font-size: 15px;
+}
+.choose-us p {
+  color: #596277;
+  margin-bottom: 0;
+}
+
+.explore-services .container h3 {
+  font-weight: bold;
+  font-size: 30px;
+}
+.explore-services .container .services {
+  display: flex;
+  gap: 20px;
+}
+.explore-services .container .services .services-list {
+  width: 40%;
+}
+.explore-services .container .services .services-list ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.explore-services .container .services .services-list ul .list-item {
+  padding: 20px 25px;
+  font-weight: bold;
+  font-size: 20px;
+  list-style-type: none;
+  background-color: #F2F2F2;
+  display: flex;
+}
+.explore-services .container .services .services-list ul .list-item i {
+  font-size: 30px;
+}
+.explore-services .container .services .service-detail {
+  display: flex;
+  gap: 20px;
+}
+.explore-services .container .services .service-detail .image {
+  width: 100%;
+  position: relative;
+}
+.explore-services .container .services .service-detail .image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.explore-services .container .services .service-detail .details {
+  width: 95%;
+}
+.explore-services .container .services .service-detail .details .features p {
+  display: flex;
+  gap: 10px;
+}
+.explore-services .container .services .service-detail .details button {
+  padding: 20px 50px;
+  background-color: #0F1436;
+  font-weight: 600;
+  color: white;
+}
+.explore-services .container .services .service-detail .details button:hover {
+  background-color: white;
+  color: #0F1436;
+}
+
+.contact-page-header-starter {
+  padding-top: 4.8%;
+  margin-bottom: 20px;
+}
+.contact-page-header-starter .header-starter-container {
+  background: url(https://www.goacarrepair.com/upload/bannerimage/425ff0ecbf53db5d37109e566d4f7e9e.webp) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+.contact-page-header-starter .header-starter-container h2 {
+  font-weight: bold;
+  font-size: 4rem;
+  color: white;
+}
+.contact-page-header-starter .header-starter-container button {
+  font-weight: bold;
+  color: #0B2154;
+  font-size: 1rem;
+  border: 1px solid #0B2154;
+}
+.contact-page-header-starter .header-starter-container button:hover {
+  background-color: #0B2154;
+  color: white;
+}
+
+.contact-form .container h3 {
+  font-size: 35px;
+}
+.contact-form .container .info {
+  display: flex;
+}
+.contact-form .container .info div {
+  background-color: #F2F2F2;
+  flex-grow: 1;
+  padding: 20px;
+}
+.contact-form .container .info div h4 {
+  font-weight: bold;
+  font-size: 22px;
+}
+.contact-form .container .info div p {
+  color: #596277;
+  margin-bottom: 0;
+}
+.contact-form .container .form-container {
+  display: flex;
+  gap: 30px;
+}
+.contact-form .container .form-container .map {
+  width: 50%;
+}
+.contact-form .container .form-container .map iframe {
+  width: 100%;
+  height: 100%;
+}
+.contact-form .container .form-container .form {
+  width: 50%;
+}
+.contact-form .container .form-container .form p {
+  color: #596277;
+}
+.contact-form .container .form-container .form button {
+  padding: 20px 50px;
+  background-color: #0F1436;
+  font-weight: 600;
+  color: white;
+  border: 1px solid white;
+}
+.contact-form .container .form-container .form button:hover {
+  background-color: white;
+  color: #0F1436;
+  border: 1px solid #0B2154;
+}
+
+.gallery-page-header-starter {
+  padding-top: 4.8%;
+  margin-bottom: 20px;
+}
+.gallery-page-header-starter .header-starter-container {
+  background: url(https://www.goacarrepair.com/upload/bannerimage/2767cc3ede7592a47bd6657e3799565c.webp) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+.gallery-page-header-starter .header-starter-container .container {
+  padding-top: 7rem;
+  padding-bottom: 6rem;
+}
+.gallery-page-header-starter .header-starter-container .container h2 {
+  font-weight: bold;
+  font-size: 4rem;
+  color: white;
+}
+.gallery-page-header-starter .header-starter-container .container button {
+  font-weight: bold;
+  color: #0B2154;
+  font-size: 1rem;
+  border: 1px solid #0B2154;
+}
+.gallery-page-header-starter .header-starter-container .container button:hover {
+  background-color: #0B2154;
+  color: white;
+}
+
+.gallery-section .container h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 2.5rem 0;
+}
+.gallery-section .container .images-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+.gallery-section .container .images-container .image {
+  width: 33%;
+  padding: 10px;
+}
+.gallery-section .container .images-container .image img {
+  width: 100%;
+}
+
+.service-page-header-starter {
+  padding-top: 4.8%;
+  margin-bottom: 20px;
+}
+.service-page-header-starter .header-starter-container {
+  background: url(https://www.goacarrepair.com/upload/bannerimage/992a0f0542384f1ee5ef51b7cf4ae6c4.webp) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+.service-page-header-starter .header-starter-container h2 {
+  font-weight: bold;
+  font-size: 4rem;
+  color: white;
+}
+.service-page-header-starter .header-starter-container button {
+  font-weight: bold;
+  color: #0B2154;
+  font-size: 1rem;
+  border: 1px solid #0B2154;
+}
+.service-page-header-starter .header-starter-container button:hover {
+  background-color: #0B2154;
+  color: white;
+}
+
+.services-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.services-section .container h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+.services-section .services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.services-section .services-container .service {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  width: 32%;
+  background-color: #F2F2F2;
+}
+.services-section .services-container .service .image {
+  width: 20%;
+}
+.services-section .services-container .service .about .title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #0B2154;
+}
+
+.about-page-header-starter {
+  padding-top: 4.8%;
+  margin-bottom: 20px;
+}
+.about-page-header-starter .header-starter-container {
+  background: url(https://www.goacarrepair.com/upload/bannerimage/d548373f1789a32c938a0351a73de011.webp) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+.about-page-header-starter .header-starter-container h2 {
+  font-weight: bold;
+  font-size: 4rem;
+  color: white;
+}
+.about-page-header-starter .header-starter-container button {
+  font-weight: bold;
+  color: #0B2154;
+  font-size: 1rem;
+  border: 1px solid #0B2154;
+}
+.about-page-header-starter .header-starter-container button:hover {
+  background-color: #0B2154;
+  color: white;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.services-container .service {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  width: 32%;
+  background-color: #F2F2F2;
+}
+.services-container .service .image {
+  width: 20%;
+}
+.services-container .service .about .title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #0B2154;
+}/*# sourceMappingURL=style.css.map */

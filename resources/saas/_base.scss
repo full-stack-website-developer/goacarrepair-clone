@@ -1,0 +1,13 @@
+// _base.scss - Global resets and basic tags
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: $font-stack;
+    background-color: #f8f9fa;
+    color: $secondary-color;
+  }

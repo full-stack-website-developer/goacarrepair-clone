@@ -1,0 +1,21 @@
+// style.scss
+
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'layout';
+@import 'utilities';
+
+// Components
+@import 'components/header';
+@import 'components/footer';
+@import 'components/navbar';
+@import 'components/button';
+
+// Pages
+@import 'pages/home';
+@import 'pages/contact';
+@import 'pages/gallery';
+@import 'pages/services';
+@import 'pages/about';
+
