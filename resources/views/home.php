@@ -184,7 +184,7 @@
             <div class="services-container">
                 <div class="service">
                     <div class="image">
-                        <img src="<?= assets('images/home-services/service-1.svg') ?>" alt="">
+                        <img src="<?= assets('images/home/service-1.svg') ?>" alt="">
                     </div>
                     <div class="about">
                         <p class="title">Auto Denting Services in Abu Dhabi</p>
