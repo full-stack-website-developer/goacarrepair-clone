@@ -7,7 +7,7 @@
 body {
   font-family: "Segoe UI", sans-serif;
   background-color: #f8f9fa;
-  color: #0b2154;
+  color: #0B2154;
 }
 
 .section {
@@ -32,7 +32,7 @@ body {
 }
 
 .active {
-  background-color: #0b2154 !important;
+  background-color: #0B2154 !important;
   color: white !important;
 }
 
@@ -53,7 +53,7 @@ body {
 }
 
 .t-secondary {
-  color: #0b2154;
+  color: #0B2154;
 }
 
 header {
@@ -109,7 +109,7 @@ header .nav-container .header-btn {
   margin-left: 15px;
   cursor: pointer;
   border: 1px solid #878db1;
-  background-color: #0b2154;
+  background-color: #0B2154;
   padding: 15px;
   color: white !important;
   font-weight: 600;
@@ -117,14 +117,12 @@ header .nav-container .header-btn {
 }
 header .nav-container .header-btn:hover {
   background-color: white;
-  color: #0b2154 !important;
+  color: #0B2154 !important;
   transition: 5ms;
 }
 
 footer {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url(https://www.goacarrepair.com/assets/img/carousel-bg-1.jpg) center center
-      no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(https://www.goacarrepair.com/assets/img/carousel-bg-1.jpg) center center no-repeat;
 }
 footer ul {
   padding-left: 0px;
@@ -136,7 +134,7 @@ footer .footer-container {
 }
 footer .footer-container .footerbox {
   margin-top: 40px;
-  width: 240px;
+  width: 220px;
 }
 footer .footer-container .footerbox h4 {
   font-size: 25px;
@@ -153,12 +151,7 @@ footer .footer-container .footerbox li {
   list-style-type: none;
   padding-left: 7px;
   font-size: 13px;
-  transition: letter-spacing 0.3s ease;
 }
-footer .footer-container .footerbox li:hover {
-  letter-spacing: 1px;
-}
-
 footer .footer-container .footer-box1,
 footer .footer-container .footer-box2 {
   display: flex;
@@ -180,7 +173,7 @@ footer .compay-name {
   padding-top: 4%;
 }
 .carousel-section .carousel-caption {
-  color: #0b2154;
+  color: #0B2154;
   font-weight: bold;
 }
 .carousel-section .carousel-caption h6 {
@@ -196,13 +189,13 @@ footer .compay-name {
 }
 .carousel-section .carousel-caption .btn-group button {
   width: auto !important;
-  background-color: #0b2154;
+  background-color: #0B2154;
   color: white;
   font-weight: bold;
 }
 
 .service-form-section {
-  background-color: #0f1436;
+  background-color: #0F1436;
 }
 .service-form-section .form-container {
   display: flex;
@@ -223,14 +216,14 @@ footer .compay-name {
 }
 .service-form-section .form-container .quote-form .btn-quote button {
   padding: 20px 50px;
-  background-color: #0f1436;
+  background-color: #0F1436;
   font-weight: 600;
   color: white;
   border: 1px solid white;
 }
 .service-form-section .form-container .quote-form .btn-quote button:hover {
   background-color: white;
-  color: #0f1436;
+  color: #0F1436;
 }
 
 .offer-service-section .container {
@@ -239,7 +232,7 @@ footer .compay-name {
   gap: 40px;
 }
 .offer-service-section .container h2 {
-  color: #0b2154;
+  color: #0B2154;
 }
 .offer-service-section .container p {
   color: #596277;
@@ -254,7 +247,7 @@ footer .compay-name {
   padding: 20px;
   gap: 10px;
   width: 32%;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
 }
 .offer-service-section .services-container .service .image {
   width: 20%;
@@ -262,7 +255,7 @@ footer .compay-name {
 .offer-service-section .services-container .service .about .title {
   font-weight: bold;
   font-size: 18px;
-  color: #0b2154;
+  color: #0B2154;
 }
 
 .special-client-offers-section {
@@ -273,7 +266,7 @@ footer .compay-name {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-  color: #0b2154;
+  color: #0B2154;
 }
 .special-client-offers-section .special-client-offers .offers {
   display: flex;
@@ -287,10 +280,8 @@ footer .compay-name {
 }
 .special-client-offers-section .special-client-offers .offers .offer img {
   width: 50%;
-  -webkit-filter: brightness(0) saturate(100%) invert(9%) sepia(16%)
-    saturate(5726%) hue-rotate(213deg) brightness(90%) contrast(101%);
-  filter: brightness(0) saturate(100%) invert(9%) sepia(16%) saturate(5726%)
-    hue-rotate(213deg) brightness(90%) contrast(101%);
+  -webkit-filter: brightness(0) saturate(100%) invert(9%) sepia(16%) saturate(5726%) hue-rotate(213deg) brightness(90%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(9%) sepia(16%) saturate(5726%) hue-rotate(213deg) brightness(90%) contrast(101%);
 }
 .special-client-offers-section .special-client-offers .offers .offer h4 {
   font-size: 14px;
@@ -298,6 +289,7 @@ footer .compay-name {
 }
 
 .statistics-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("http://localhost:8001/assets/images/home/stats-banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -314,9 +306,7 @@ footer .compay-name {
   font-size: 18px;
   color: white;
 }
-
-.statistics-section .statistics .statistic span,
-.statistics-section .statistics .statistic i {
+.statistics-section .statistics .statistic span, .statistics-section .statistics .statistic i {
   font-weight: bolder;
   font-size: 25px;
 }
@@ -334,7 +324,7 @@ footer .compay-name {
   justify-content: center;
 }
 .brands-section .brands .mySwiper .swiper-wrapper .swiper-slide img {
-  border: 30px solid #f2f2f2;
+  border: 30px solid #F2F2F2;
 }
 .brands-section .brands .arrows {
   display: flex;
@@ -344,7 +334,7 @@ footer .compay-name {
 .brands-section .brands .arrows div {
   position: relative;
   margin-top: 0;
-  background-color: #0f1436;
+  background-color: #0F1436;
   padding: 0px 25px;
 }
 .brands-section .brands .arrows div::after {
@@ -421,7 +411,7 @@ footer .compay-name {
   font-weight: bold;
   font-size: 20px;
   list-style-type: none;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
   display: flex;
 }
 .explore-services .container .services .services-list ul .list-item i {
@@ -451,13 +441,13 @@ footer .compay-name {
 }
 .explore-services .container .services .service-detail .details button {
   padding: 20px 50px;
-  background-color: #0f1436;
+  background-color: #0F1436;
   font-weight: 600;
   color: white;
 }
 .explore-services .container .services .service-detail .details button:hover {
   background-color: white;
-  color: #0f1436;
+  color: #0F1436;
 }
 
 .contact-page-header-starter {
@@ -465,7 +455,7 @@ footer .compay-name {
   margin-bottom: 20px;
 }
 .contact-page-header-starter .header-starter-container {
-  /* background: url(https://www.goacarrepair.com/upload/bannerimage/425ff0ecbf53db5d37109e566d4f7e9e.webp) !important; */
+  background: url(https://www.goacarrepair.com/upload/bannerimage/425ff0ecbf53db5d37109e566d4f7e9e.webp) !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center center !important;
@@ -477,12 +467,12 @@ footer .compay-name {
 }
 .contact-page-header-starter .header-starter-container button {
   font-weight: bold;
-  color: #0b2154;
+  color: #0B2154;
   font-size: 1rem;
-  border: 1px solid #0b2154;
+  border: 1px solid #0B2154;
 }
 .contact-page-header-starter .header-starter-container button:hover {
-  background-color: #0b2154;
+  background-color: #0B2154;
   color: white;
 }
 
@@ -493,7 +483,7 @@ footer .compay-name {
   display: flex;
 }
 .contact-form .container .info div {
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
   flex-grow: 1;
   padding: 20px;
 }
@@ -524,15 +514,15 @@ footer .compay-name {
 }
 .contact-form .container .form-container .form button {
   padding: 20px 50px;
-  background-color: #0f1436;
+  background-color: #0F1436;
   font-weight: 600;
   color: white;
   border: 1px solid white;
 }
 .contact-form .container .form-container .form button:hover {
   background-color: white;
-  color: #0f1436;
-  border: 1px solid #0b2154;
+  color: #0F1436;
+  border: 1px solid #0B2154;
 }
 
 .gallery-page-header-starter {
@@ -556,12 +546,12 @@ footer .compay-name {
 }
 .gallery-page-header-starter .header-starter-container .container button {
   font-weight: bold;
-  color: #0b2154;
+  color: #0B2154;
   font-size: 1rem;
-  border: 1px solid #0b2154;
+  border: 1px solid #0B2154;
 }
 .gallery-page-header-starter .header-starter-container .container button:hover {
-  background-color: #0b2154;
+  background-color: #0B2154;
   color: white;
 }
 
@@ -589,7 +579,7 @@ footer .compay-name {
   margin-bottom: 20px;
 }
 .service-page-header-starter .header-starter-container {
-  /* background: url(https://www.goacarrepair.com/upload/bannerimage/992a0f0542384f1ee5ef51b7cf4ae6c4.webp) !important; */
+  background: url(https://www.goacarrepair.com/upload/bannerimage/992a0f0542384f1ee5ef51b7cf4ae6c4.webp) !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center center !important;
@@ -601,12 +591,12 @@ footer .compay-name {
 }
 .service-page-header-starter .header-starter-container button {
   font-weight: bold;
-  color: #0b2154;
+  color: #0B2154;
   font-size: 1rem;
-  border: 1px solid #0b2154;
+  border: 1px solid #0B2154;
 }
 .service-page-header-starter .header-starter-container button:hover {
-  background-color: #0b2154;
+  background-color: #0B2154;
   color: white;
 }
 
@@ -630,7 +620,7 @@ footer .compay-name {
   padding: 20px;
   gap: 10px;
   width: 32%;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
 }
 .services-section .services-container .service .image {
   width: 20%;
@@ -638,7 +628,7 @@ footer .compay-name {
 .services-section .services-container .service .about .title {
   font-weight: bold;
   font-size: 18px;
-  color: #0b2154;
+  color: #0B2154;
 }
 
 .about-page-header-starter {
@@ -646,6 +636,7 @@ footer .compay-name {
   margin-bottom: 20px;
 }
 .about-page-header-starter .header-starter-container {
+  background: url(https://www.goacarrepair.com/upload/bannerimage/d548373f1789a32c938a0351a73de011.webp) !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center center !important;
@@ -657,12 +648,12 @@ footer .compay-name {
 }
 .about-page-header-starter .header-starter-container button {
   font-weight: bold;
-  color: #0b2154;
+  color: #0B2154;
   font-size: 1rem;
-  border: 1px solid #0b2154;
+  border: 1px solid #0B2154;
 }
 .about-page-header-starter .header-starter-container button:hover {
-  background-color: #0b2154;
+  background-color: #0B2154;
   color: white;
 }
 
@@ -676,7 +667,7 @@ footer .compay-name {
   padding: 20px;
   gap: 10px;
   width: 32%;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
 }
 .services-container .service .image {
   width: 20%;
@@ -684,7 +675,7 @@ footer .compay-name {
 .services-container .service .about .title {
   font-weight: bold;
   font-size: 18px;
-  color: #0b2154;
+  color: #0B2154;
 }
 
 .blogs-section {
@@ -804,13 +795,13 @@ footer .compay-name {
 }
 .reply-section .comment-form .btn-post button {
   padding: 20px 50px;
-  background-color: #0f1436;
+  background-color: #0F1436;
   font-weight: 600;
   color: white;
 }
 .reply-section .comment-form .btn-post button:hover {
   background-color: white;
-  color: #0f1436;
+  color: #0F1436;
 }
 
 .single-service-page-header-starter {
@@ -829,12 +820,12 @@ footer .compay-name {
 }
 .single-service-page-header-starter .header-starter-container button {
   font-weight: bold;
-  color: #0b2154;
+  color: #0B2154;
   font-size: 1rem;
-  border: 1px solid #0b2154;
+  border: 1px solid #0B2154;
 }
 .single-service-page-header-starter .header-starter-container button:hover {
-  background-color: #0b2154;
+  background-color: #0B2154;
   color: white;
 }
 
@@ -919,60 +910,4 @@ footer .compay-name {
 .flawless-finish .container .questions h2 {
   margin-top: 50px;
   text-align: center;
-} /*# sourceMappingURL=style.css.map */
-
-/* questions section css */
-.questions .container h2 {
-  text-align: center;
-  font-weight: 700;
-  font-size: 25px;
-}
-
-.questions .container .questions-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.questions .container .questions-container .querybox {
-  /* border: 1px solid red; */
-  width: 48%;
-  background-color: #f2f2f2;
-  height: fit-content;
-}
-.questions .container .questions-container .querybox button {
-  width: -webkit-fill-available;
-  text-align: start;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px;
-  border: none;
-  color: #596277;
-}
-.questions .container .querybox button i {
-  align-items: end;
-}
-
-.questions .container .questions-container .querybox .answer {
-  padding: 12px;
-  display: none;
-}
-
-.questions .container .questions-container .querybox .answer.active {
-  display: block !important;
-  color: #596277 !important;
-  background-color: #f2f2f2 !important;
-}
-
-.questions .querybox .btn {
-  border-radius: 0;
-  color: 596277!;
-  background-color: #f2f2f2;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-.questions .querybox .btn.active-btn {
-  background-color: #0f1436;
-  color: white !important;
-  border: 3px solid rgba(45, 45, 124, 0.963);
-}
+}/*# sourceMappingURL=style.css.map */

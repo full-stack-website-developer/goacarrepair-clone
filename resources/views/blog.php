@@ -318,26 +318,79 @@
     </section>
     <section class="brands-section">
         <div class="container brands pt-5 pb-5">
-            <h2 class="text-center mb-4">Our Real Estate Partners in Dubai</h2>
+            <h2 class="text-center mb-4">POPULAR MAKES THAT WE SERVICE</h2>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="https://www.goacarrepair.com/upload/logo/volvo.jpg" alt="Volvo" /></div>
-                    <div class="swiper-slide"><img src="https://www.goacarrepair.com/upload/logo/volvo.jpg" alt="Aston Martin" /></div>
-                    <div class="swiper-slide"><img src="https://www.goacarrepair.com/upload/logo/volvo.jpg" alt="Audi" /></div>
-                    <div class="swiper-slide"><img src="https://www.goacarrepair.com/upload/logo/volvo.jpg" alt="Bentley" /></div>
-                    <div class="swiper-slide"><img src="https://www.goacarrepair.com/upload/logo/volvo.jpg" alt="BMW" /></div>
-                    <div class="swiper-slide"><img src="https://www.goacarrepair.com/upload/logo/volvo.jpg" alt="BMW" /></div>
-                    <div class="swiper-slide"><img src="https://www.goacarrepair.com/upload/logo/volvo.jpg" alt="BMW" /></div>
-                    <div class="swiper-slide"><img src="https://www.goacarrepair.com/upload/logo/volvo.jpg" alt="BMW" /></div>
-                    <div class="swiper-slide"><img src="https://www.goacarrepair.com/upload/logo/volvo.jpg" alt="BMW" /></div>
-                    <div class="swiper-slide"><img src="https://www.goacarrepair.com/upload/logo/volvo.jpg" alt="BMW" /></div>
-                </div>
-                <!-- Arrows -->
-                <div class="arrows">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider1.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider2.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider3.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider4.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider5.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider6.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider7.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider8.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider9.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider10.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider11.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider12.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider13.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider14.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider15.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider16.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider17.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider18.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider19.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider20.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider21.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider22.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider23.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider24.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider25.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider26.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider27.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider28.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider29.jpg') ?>"
+                            alt="service image" /></div>
+                    <div class="swiper-slide"><img src="<?php echo assets('images/home/slider30.jpg') ?>"
+                            alt="service image" /></div>
+
                 </div>
             </div>
+            <!-- Arrows -->
+
+            <div class="arrows">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
         </div>
     </section>
 
