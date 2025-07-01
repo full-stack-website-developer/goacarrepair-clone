@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto Denting Services In Abu Dhabi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="<?= assets('css/style.css') ?>">
 </head>
 
 <body>
-<?php view('layouts/header') ?>
+    <?php view('layouts/header') ?>
     <section class="single-service-page-header-starter">
         <div class="header-starter-container auto-denting-services">
             <div class="container pt-3rem pb-3rem text-center auto-denting-services">
@@ -42,7 +42,8 @@
             <form action="#" method="POST" class="quote-form">
                 <div class="mb-3 d-flex gap-3">
                     <input type="text" class="form-control p-3 rounded-1" name="name" id="" placeholder="Your Name">
-                    <input type="text" class="form-control p-3 rounded-1" name="ph-number" id="" placeholder="Your phone number">
+                    <input type="text" class="form-control p-3 rounded-1" name="ph-number" id=""
+                        placeholder="Your phone number">
                 </div>
                 <div class="mb-3 d-flex gap-3">
                     <input type="text" class="form-control  p-3 rounded-1" name="email" id="" placeholder="Your Email">
@@ -222,12 +223,64 @@
 
                 </div>
             </div>
-            <div class="questions">
-                <h2 class="mb-4 mt-10">Frequently Asked Questions (FAQs)</h2>
+
+        </div>
+    </section>
+    <section class="questions">
+        <div class="container">
+            <h2 class="mb-4">Frequently Asked Questions (FAQs)</h2>
+            <div class="questions-container mb-5">
+                <div class="first querybox">
+                    <button class="btn" onclick="show('ans1', event)">
+                        Q: Can all types of dents be repaired using paintless dent repair (PDR) techniques?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="answer" id="ans1">
+                        Paintless dent repair (PDR) is suitable for repairing minor dents caused by factors such
+                        as hail, door dings, and small creases. However, more significant dents or those with paint
+                        damage may require traditional dent repair methods.
+                    </div>
+                </div>
+                <div class="second querybox">
+                    <button class="btn" onclick="show('ans2', event)">
+                        Q: How long does it take to repair a dent? <i class="fa-solid fa-chevron-down"></i> </button>
+                    <div class="answer" id="ans2">
+                        A: The duration of dent repairs can vary depending on the size, location, and complexity of the
+                        dent. Minor dents may be repaired within a few hours, while larger or more complex dents may
+                        require additional time. Our technicians will provide you with an estimated timeframe based on
+                        the specific repair needs of your vehicle.
+                    </div>
+                </div>
+                <div class="third querybox">
+                    <button class="btn" onclick="show('ans3', event)">
+                        Q: Will my vehicle's paint be affected during the dent repair process? <i
+                            class="fa-solid fa-chevron-down"></i> </button>
+                    <div class="answer" id="ans3">
+                        A: With paintless dent repair (PDR), the risk of affecting your vehicle's paint is minimal. The
+                        technique focuses on manipulating the dent from the underside of the panel, preserving the
+                        original paintwork. However, in cases where paint damage is present, additional steps may be
+                        necessary to restore the finish.
+                    </div>
+                </div>
+                <div class="fourth querybox">
+                    <button class="btn" onclick="show('ans4', event)">
+                        Q: Do you provide a warranty for dent repair services?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="answer" id="ans4">
+                        Q: Do you provide a warranty for dent repair services?
+                        A: Yes, we stand behind the quality of our dent repair services and offer a warranty for the
+                        work performed. The specific warranty details will be provided to you based on the type of dent
+                        repair and the extent of the work done.
+                    </div>
+                </div>
             </div>
+        </div>
         </div>
     </section>
     <?php view('layouts/footer') ?>
+    <script src="<?= assets('js/common.js') ?>"></script>
+
 </body>
 
 </html>
