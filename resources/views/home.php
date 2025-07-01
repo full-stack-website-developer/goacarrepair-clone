@@ -391,12 +391,7 @@
             </div>
         </div>
     </section>
-    <section class="statistics-section" style="
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.7), 
-        rgba(0, 0, 0, 0.7)
-    ), 
-    url('<?= assets('images/home/stats-banner.jpg'); ?>');">
+    <section class="statistics-section">
         <div class="container statistics pt-5 pb-5">
             <div class="statistic">
                 <i class="fa-solid fa-check"></i>
