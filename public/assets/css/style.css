@@ -910,4 +910,76 @@ footer .compay-name {
 .flawless-finish .container .questions h2 {
   margin-top: 50px;
   text-align: center;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.admin-service-create form {
+  margin-left: 15%;
+}
+
+.admin-sidebar {
+  padding-top: 4.2%;
+}
+
+* questions section css */
+.questions .container h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.questions .container .questions-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.questions .container .questions-container .querybox {
+  /* border: 1px solid red; */
+  width: 48%;
+  background-color: #f2f2f2;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.questions .container h2{
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+.questions .container .questions-container .querybox button {
+  width: -webkit-fill-available;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: none;
+  color: #596277;
+}
+.questions .container .querybox button i {
+  align-items: end;
+}
+
+.questions .container .questions-container .querybox .answer {
+  padding: 12px;
+  display: none;
+}
+
+.questions .container .questions-container .querybox .answer.active {
+  display: block !important;
+  color: #596277 !important;
+  background-color: #f2f2f2 !important;
+}
+
+.questions .querybox .btn {
+  border-radius: 0;
+  color: 596277!;
+  background-color: #f2f2f2;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.questions .querybox .btn.active-btn {
+  background-color: #0f1436;
+  color: white !important;
+  border: 3px solid rgba(45, 45, 124, 0.963);
+}

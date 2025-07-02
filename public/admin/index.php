@@ -13,13 +13,13 @@
 
     switch ($url) {
         case '/admin': 
-            view('admin/dashboard');
+            viewAdmin('dashboard');
             break;
         case '/admin/services':
-            view('/admin/services/show');
+            viewAdmin('services/show');
             break;
         case '/admin/services/create':
-            view('/admin/services/create');
+            viewAdmin('services/create');
             break;
         default:
             die('Page not Found');
