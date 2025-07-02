@@ -14,6 +14,6 @@
     <?php view('layouts/admin-header') ?>
     <?php view('layouts/admin-sidebar') ?>
     <h1>All Services</h1>
-    
+    <a href="services/create">create new service</a>
 </body>
 </html>
