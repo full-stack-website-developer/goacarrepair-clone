@@ -1,0 +1,51 @@
+.d-flex{
+    .flex-grow-1{
+        .p-4{
+            .container-fluid{
+                .card{
+                    height: 80vh;
+                    .table-responsive{
+                        .list-header{
+                            display: flex;
+                            justify-content: center;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-top: 0.5rem;
+                            a{
+                                background-color: #0f1436;
+                                
+                            }
+                        }
+                        .table{
+                            thead{
+                                background-color: #0f1436 !important;
+                                tr{
+                                    th{
+                                        padding: 10px 20px;
+                                        // background-color: #0f1436 !important;
+                                    }
+                                }
+                            }
+                            tbody{
+                                tr{
+                                    td{
+                                        img{
+                                        max-width: 80px;
+                                        // min-height: 100px;
+                                        object-fit: cover;
+                                          }
+                                        padding: 8px 12px;
+                                        a{
+                                            padding: 4px 8px;
+                                            border-radius: 6px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

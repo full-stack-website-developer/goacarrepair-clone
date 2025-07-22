@@ -26,4 +26,31 @@
 
 @import 'pages/admin/service/create';
 @import 'pages/admin/sidebarAdmin';
+@import 'pages/admin/service/list';
+@import 'pages/admin/service/edit';
+@import 'pages/admin/blog/create';
 
+
+
+/* Target the entire scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* width of the vertical scrollbar */
+  height: 12px; /* height of the horizontal scrollbar */
+}
+
+/* Background of the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #0f1436;
+  border-radius: 6px;
+  border: 3px solid #f1f1f1; /* Optional padding effect */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:  #0f143670;
+}

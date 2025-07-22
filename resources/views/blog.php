@@ -29,115 +29,42 @@
         <div class="container">
             <h2 class="main-heading text-center mt-5">Latest News In Dubai</h2>
             <div class="blogs-container">
-                <div class="blog">
-                    <div class="image mb-3">
-                        <img src="https://www.luxliving.ae/blog/wp-content/uploads/2025/06/Ejari-Registration-2.jpg" alt="">
-                    </div>
-                    <h3 class="title">Dubai Launches WhatsApp-Based Ejari Registration</h3>
-                    <div class="details-group">
-                        <div class="logo">
-                            <img src="https://secure.gravatar.com/avatar/e0a5eb0f7c7e08f1394b9c80747f40a2daf7d5b2862dea873eef9918526d3372?s=96&d=mm&r=g" alt="">
-                        </div>
-                        <div class="detail">
-                            <p>luxliving</p>
-                            <div>
-                                <i class="fa-regular fa-clock"></i>
-                                <p>June 17, 2025</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog">
-                    <div class="image mb-3">
-                        <img src="https://www.luxliving.ae/blog/wp-content/uploads/2025/06/Ejari-Registration-2.jpg" alt="">
-                    </div>
-                    <h3 class="title">Dubai Launches WhatsApp-Based Ejari Registration</h3>
-                    <div class="details-group">
-                        <div class="logo">
-                            <img src="https://secure.gravatar.com/avatar/e0a5eb0f7c7e08f1394b9c80747f40a2daf7d5b2862dea873eef9918526d3372?s=96&d=mm&r=g" alt="">
-                        </div>
-                        <div class="detail">
-                            <p>luxliving</p>
-                            <div>
-                                <i class="fa-regular fa-clock"></i>
-                                <p>June 17, 2025</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog">
-                    <div class="image mb-3">
-                        <img src="https://www.luxliving.ae/blog/wp-content/uploads/2025/06/Ejari-Registration-2.jpg" alt="">
-                    </div>
-                    <h3 class="title">Dubai Launches WhatsApp-Based Ejari Registration</h3>
-                    <div class="details-group">
-                        <div class="logo">
-                            <img src="https://secure.gravatar.com/avatar/e0a5eb0f7c7e08f1394b9c80747f40a2daf7d5b2862dea873eef9918526d3372?s=96&d=mm&r=g" alt="">
-                        </div>
-                        <div class="detail">
-                            <p>luxliving</p>
-                            <div>
-                                <i class="fa-regular fa-clock"></i>
-                                <p>June 17, 2025</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog">
-                    <div class="image mb-3">
-                        <img src="https://www.luxliving.ae/blog/wp-content/uploads/2025/06/Ejari-Registration-2.jpg" alt="">
-                    </div>
-                    <h3 class="title">Dubai Launches WhatsApp-Based Ejari Registration</h3>
-                    <div class="details-group">
-                        <div class="logo">
-                            <img src="https://secure.gravatar.com/avatar/e0a5eb0f7c7e08f1394b9c80747f40a2daf7d5b2862dea873eef9918526d3372?s=96&d=mm&r=g" alt="">
-                        </div>
-                        <div class="detail">
-                            <p>luxliving</p>
-                            <div>
-                                <i class="fa-regular fa-clock"></i>
-                                <p>June 17, 2025</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog">
-                    <div class="image mb-3">
-                        <img src="https://www.luxliving.ae/blog/wp-content/uploads/2025/06/Ejari-Registration-2.jpg" alt="">
-                    </div>
-                    <h3 class="title">Dubai Launches WhatsApp-Based Ejari Registration</h3>
-                    <div class="details-group">
-                        <div class="logo">
-                            <img src="https://secure.gravatar.com/avatar/e0a5eb0f7c7e08f1394b9c80747f40a2daf7d5b2862dea873eef9918526d3372?s=96&d=mm&r=g" alt="">
-                        </div>
-                        <div class="detail">
-                            <p>luxliving</p>
-                            <div>
-                                <i class="fa-regular fa-clock"></i>
-                                <p>June 17, 2025</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog">
-                    <div class="image mb-3">
-                        <img src="https://www.luxliving.ae/blog/wp-content/uploads/2025/06/Ejari-Registration-2.jpg" alt="">
-                    </div>
-                    <h3 class="title">Dubai Launches WhatsApp-Based Ejari Registration</h3>
-                    <div class="details-group">
-                        <div class="logo">
-                            <img src="https://secure.gravatar.com/avatar/e0a5eb0f7c7e08f1394b9c80747f40a2daf7d5b2862dea873eef9918526d3372?s=96&d=mm&r=g" alt="">
-                        </div>
-                        <div class="detail">
-                            <p>luxliving</p>
-                            <div>
-                                <i class="fa-regular fa-clock"></i>
-                                <p>June 17, 2025</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
+            <?php 
+                $sql = "SELECT * FROM blog";
+                $conn = getConnection();
+                $stmt = $conn->prepare($sql);
+                $stmt->execute();
+                $blogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                // echo "<pre>";
+                // print_r($blogs);
+                // die;
+                    if(!empty($blogs) && is_array($blogs)){
+                        foreach($blogs as $blog){ ?>
+                        <div class="blog">
+                           <a href="/blog/<?= $blog['slug'] ?>">
+                                <div class="image mb-3">
+                                    <img src="<?= BASE_URL . $blog['banner']; ?>" alt="">
+                                </div>
+                                <h3 class="title"><?= $blog['title']; ?></h3>
+                                <div class="details-group">
+                                    <div class="logo">
+                                        <img src="<?= assets('/images/blog-logo.png')  ?>" alt="lux-living logo">
+                                    </div>
+                                    <div class="detail">
+                                        <p>luxliving</p>
+                                        <div>
+                                            <i class="fa-regular fa-clock"></i>
+                                            <p>   <?= date('F j, Y', strtotime($blog['created_at']));  ?>  </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                 <?php  
+                    }
+                    }
+                  ?>
                 </div>
             </div>
         </div>

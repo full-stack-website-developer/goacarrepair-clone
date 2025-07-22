@@ -17,10 +17,15 @@
           <li><a href="/blog">Blog</a></li>
         </ul>
 
-        <a href="tel:+923765483765" class="header-btn">
+        <!-- <a href="tel:+923765483765" class="header-btn">
           <i class="fa-solid fa-phone pe-1"></i> +92 376 5483765
-        </a>
+        </a> -->
+        <?php 
+          include(__DIR__ . '/../components/phone-btn.php');
+        ?>
       </div>
     </div>
   </nav>
 </header>
+
+

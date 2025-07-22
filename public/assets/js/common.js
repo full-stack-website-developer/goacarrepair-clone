@@ -29,3 +29,4 @@ function show(id, event) {
     clickedBtn.classList.add("active-btn");
   }
 }
+

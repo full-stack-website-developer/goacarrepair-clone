@@ -1,3 +1,23 @@
+<?php 
+
+$conn = getConnection();
+$nameError = $_SESSION['errors']["nameError"] ?? '';
+$emailError = $_SESSION['errors']["emailError"] ?? '';
+$phoneError = $_SESSION['errors']["phoneError"] ?? '';
+$serviceError = $_SESSION['errors']["serviceError"] ?? '';
+
+
+
+unset(
+    $_SESSION['errors']["nameError"],
+    $_SESSION['errors']["emailError"],
+    $_SESSION['errors']["phoneError"],
+    $_SESSION['errors']["serviceError"],
+)
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,11 +35,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="<?= assets('css/style.css') ?>">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="<?= assets('css/style.css') ?>">    
 </head>
 
 <body>
-    <?php view('layouts/header') ?>
+    <?php view('layouts/header') ?>   
 
     <section class="carousel-section">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -36,6 +57,7 @@
                                     +92 3089375935
                                 </button>
                             </a>
+                            
                             <a href="mailto:info@nexgensoft.com">
                                 <button class="p-3">
                                     <i class="fa-solid fa-envelope"></i>
@@ -149,45 +171,38 @@
     <section class="service-form-section">
         <div class="container form-container">
             <h2 class="mb-4">Book For A Service</h2>
-            <form action="#" method="POST" class="quote-form">
+            <form action="/admin/contacts/store" method="POST" class="quote-form">
                 <div class="mb-3 d-flex gap-3">
-                    <input type="text" class="form-control p-3" name="name" id="" placeholder="Your Name">
-                    <input type="text" class="form-control p-3" name="ph-number" id="" placeholder="Your phone number">
+                    <input type="text" class="form-control p-3 <?= $nameError ? 'is-invalid' : '' ?>" name="name" id="" placeholder="Your Name">
+                
+                    <input type="text" class="form-control p-3 <?= $phoneError ? 'is-invalid' : '' ?>" name="phone" id="" placeholder="Your phone number">
                 </div>
+                       <?php 
+                            $sql = "SELECT * FROM services";
+                            $stmt = $conn->prepare($sql);
+                            $stmt->execute();
+
+                            $titles = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                        ?>
                 <div class="mb-3 d-flex gap-3">
-                    <input type="text" class="form-control  p-3" name="email" id="" placeholder="Your Email">
-                    <select class="form-select  p-3" aria-label="Default select example">
+                    <input type="text" class="form-control  p-3 <?= $emailError ? 'is-invalid' : '' ?>" name="email" id="email" placeholder="Your Email">
+                        <select class="form-select p-3 <?= !empty($serviceError) ? 'is-invalid' : '' ?>" name="service" id="service">
                         <option selected="">Select a Service</option>
-                        <option value=" Auto Denting Services in Abu Dhabi"> Auto Denting Services in Abu Dhabi</option>
-                        <option value=" Auto Painting Services in Abu Dhabi"> Auto Painting Services in Abu Dhabi
-                        </option>
-                        <option value=" Engine Servicing in Abu Dhabi"> Engine Servicing in Abu Dhabi</option>
-                        <option value="Auto Electric &amp; A/ C Repair Service in Abu Dhabi">Auto Electric &amp; A/ C
-                            Repair Service in Abu Dhabi</option>
-                        <option value=" Engine Repair in Abu Dhabi"> Engine Repair in Abu Dhabi</option>
-                        <option value=" Oil Changing in Abu Dhabi"> Oil Changing in Abu Dhabi</option>
-                        <option value=" Rim Repair Services in Abu Dhabi"> Rim Repair Services in Abu Dhabi</option>
-                        <option value="Car Accident Repair Services in Abu Dhabi">Car Accident Repair Services in Abu
-                            Dhabi</option>
-                        <option value="Gearbox Repairs in Abu Dhabi">Gearbox Repairs in Abu Dhabi</option>
-                        <option value="Chassis Alignment Services in Abu Dhabi">Chassis Alignment Services in Abu Dhabi
-                        </option>
-                        <option value=" Comprehensive Engine Overhauls in Abu Dhabi"> Comprehensive Engine Overhauls in
-                            Abu Dhabi</option>
-                        <option value="Suspension Repairs Services  in Abu Dhabi">Suspension Repairs Services in Abu
-                            Dhabi</option>
-                        <option value=" Transmission Overhauls and Repairs  in Abu Dhabi"> Transmission Overhauls and
-                            Repairs in Abu Dhabi</option>
-                        <option value=" Brake Replacements in Abu Dhabi"> Brake Replacements in Abu Dhabi</option>
-                        <option value=" Steering Wheel Repairs in Abu Dhabi"> Steering Wheel Repairs in Abu Dhabi
-                        </option>
-                        <option value=" Diagnostic Test in Abu Dhabi"> Diagnostic Test in Abu Dhabi</option>
-                        <option value=" Tire Replacement in Abu Dhabi"> Tire Replacement in Abu Dhabi</option>
-                        <option>Other Service</option>
+                        <?php 
+                            foreach($titles as $title) { ?>
+
+                                <option value="<?=$title['id'] ?>"> <?= $title['service_title'] ?></option>
+                           <?php } ?>
+
+                        <option value="Other Service">Other Service</option>
                     </select>
                 </div>
-                <div class="btn-quote">
-                    <button>GET A FREE QUOTE <i class="fa-solid fa-arrow-right-long"></i></button>
+                 <div class="btn-quote">
+                        <div class="">
+                             <div class="g-recaptcha" data-sitekey="6LdDmoArAAAAAEkFxi64L0qdxWGRBmzayxSNUaHu" data-callback="enableSubmitBtn"></div>
+                        </div>
+                        <button type="submit" id="mySubmitBtn" name="bookService" disabled="disabled" title="Please Check Captcha First">GET A FREE QUOTE <i class="fa-solid fa-arrow-right-long"></i></button> 
+                        <!-- <button type="submit" id="mySubmitBtn" name="bookService"  title="Please Check Captcha First">GET A FREE QUOTE <i class="fa-solid fa-arrow-right-long"></i></button>  -->
                 </div>
             </form>
         </div>
@@ -203,160 +218,24 @@
                     the road. To meet your demands, our workshop provides a wide range of mechanical services, such as:
                 </p>
             </div>
+
             <div class="services-container">
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-1.svg') ?>" alt="">
+                <?php 
+                    $sql = "SELECT * FROM services";
+                    $stmt = $conn->prepare($sql);
+                    $stmt->execute();
+                    $services = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                    foreach ($services as $key => $service) { ?>
+                    <div class="service">
+                        <div class="image">
+                            <img src="<?= BASE_URL . $service['service_icon']; ?>" alt="">
+                        </div>
+                        <div class="about">
+                            <p class="title"><?=$service['service_title']; ?></p>
+                            <button class="btn p-0">Read More</button>
+                        </div>
                     </div>
-                    <div class="about">
-                        <p class="title">Auto Denting Services in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-2.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Auto Painting Services in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-3.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Engine Servicing in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-4.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Auto Electric & A/ C Repair Service in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-5.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Engine Repair in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-6.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Oil Changing in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-7.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title"> Rim Repair Services in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-8.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Car Accident Repair Services in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-9.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Gearbox Repairs in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-10.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Chassis Alignment Services in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-11.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Comprehensive Engine Overhauls in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-12.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title"> Suspension Repairs Services in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-13.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Transmission Overhauls and Repairs in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-14.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Brake Replacements in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-15.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Steering Wheel Repairs in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-16.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Diagnostic Test in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-17.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Tire Replacement in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
+                    <?php } ?>
             </div>
             <p class="text-justify">At Goa Refitz Car Repair Services in Abu Dhabi, UAE, we prioritize the well-being of
                 your vehicle and strive to deliver exceptional mechanical services. Our skilled technicians employ their
@@ -719,15 +598,14 @@
 
     <script src="<?= assets('js/common.js') ?>"></script>
     <script src="<?= assets('js/swiper.js') ?>"></script>
+       <script>
+        function enableSubmitBtn(){
+                const btn = document.getElementById('mySubmitBtn');
+                btn.disabled= false;       
+                btn.removeAttribute('title');
+        }
+         </script>
 </body>
 
 </html>
 
-
-</html>
-
-</html>
-
-</html>
-
-</html>

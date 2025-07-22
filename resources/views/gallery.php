@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +18,8 @@
 
     <?php view('layouts/header') ?>
 
-    <section class="gallery-page-header-starter">
+    <section class="gallery-page-header-starter"
+    style="background: url('<?= assets('images/services/services-banner.webp') ?>');">
         <div class="header-starter-container">
             <div class="container text-center">
                 <!-- <h2>Contact</h2> -->
@@ -43,39 +45,19 @@
         <div class="container">
             <h2>Our Gallery</h2>
             <div class="images-container">
+
+            <?php
+            $conn = getConnection();
+                $sql = "SELECT * FROM galleries ORDER BY sort_order ASC";
+                $stmt = $conn->prepare($sql);
+                $stmt->execute();
+                $galleries = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                foreach($galleries as $gall){  
+            ?>
                 <div class="image">
-                    <img src="<?= assets('images/gallery/galery-1.jpg') ?>" alt="">
+                    <img src="<?= BASE_URL . $gall['gallery_image'] ?>" alt="">
                 </div>
-                <div class="image">
-                    <img src="<?= assets('images/gallery/galery-2.jpg') ?>" alt="">
-                </div>
-                <div class="image">
-                    <img src="<?= assets('images/gallery/galery-3.jpg') ?>" alt="">
-                </div>
-                <div class="image">
-                    <img src="<?= assets('images/gallery/galery-4.jpg') ?>" alt="">
-                </div>
-                <div class="image">
-                    <img src="<?= assets('images/gallery/galery-5.png') ?>" alt="">
-                </div>
-                <div class="image">
-                    <img src="<?= assets('images/gallery/galery-6.png') ?>" alt="">
-                </div>
-                <div class="image">
-                    <img src="<?= assets('images/gallery/galery-7.png') ?>" alt="">
-                </div>
-                <div class="image">
-                    <img src="<?= assets('images/gallery/9engine.png') ?>" alt="">
-                </div>
-                <div class="image">
-                    <img src="<?= assets('images/gallery/rim.png') ?>" alt="">
-                </div>
-                <div class="image">
-                    <img src="<?= assets('images/gallery/oil.png') ?>" alt="">
-                </div>
-                <div class="image">
-                    <img src="<?= assets('images/gallery/10lexus.png.png') ?>" alt="">
-                </div>
+                    <?php } ?>
             </div>
         </div>
     </section>

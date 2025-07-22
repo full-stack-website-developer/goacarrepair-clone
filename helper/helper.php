@@ -1,19 +1,35 @@
 <?php
-    function view($path): void
+    function view($path, $data = []): void
     {
         $file = VIEWS_PATH . $path . '.php';
+
         if (file_exists($file)) {
+              extract($data);
             include_once($file);
         }
         else {
             echo "View FIle Not Found: $file";
         }
     }
-
-    function viewAdmin($path): void
-    {
-        $file = ADMIN_VIEWS_PATH . $path . '.php';
+        
+    function messages($path) : void{
+        $file = MESSAGES_PATH. $path . '.php';
         if (file_exists($file)) {
+            include_once($file);
+        } else{
+            echo "Not Found";
+        };
+    }
+
+
+
+    function viewAdmin($path, mixed $data = []): void
+    {
+
+        $file = ADMIN_VIEWS_PATH . $path . '.php';
+    
+        if (file_exists($file)) {
+
             include_once($file);
         }
         else {
@@ -30,4 +46,13 @@
     {
         include_once(LAYOUT_PATH . $path . '.php');
     }
+
+
+
+    function redirect($path) : void
+    {
+        header('Location: ' . $path);
+        exit;
+    }
+
 ?>

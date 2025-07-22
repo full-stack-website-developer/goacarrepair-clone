@@ -44,161 +44,27 @@
                 <h2 class="fw-bold">Our Expertise</h2>
             </div>
             <div class="services-container">
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-1.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Auto Denting home in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-2.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Auto Painting home in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-3.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Engine Servicing in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-4.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Auto Electric & A/ C Repair Service in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-5.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Engine Repair in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-6.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Oil Changing in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-7.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title"> Rim Repair home in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-8.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Car Accident Repair home in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-9.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Gearbox Repairs in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-10.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Chassis Alignment home in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-11.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Comprehensive Engine Overhauls in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-12.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title"> Suspension Repairs home in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-13.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Transmission Overhauls and Repairs in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-14.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Brake Replacements in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-15.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Steering Wheel Repairs in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-16.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Diagnostic Test in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div class="image">
-                        <img src="<?= assets('images/home/service-17.svg') ?>" alt="">
-                    </div>
-                    <div class="about">
-                        <p class="title">Tire Replacement in Abu Dhabi</p>
-                        <button class="btn p-0">Read More</button>
-                    </div>
-                </div>
+                <?php
+                $conn = getConnection();
+                $sql = "SELECT * FROM services";
+                $stmt = $conn->prepare($sql);
+                $stmt->execute();
+                $services = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                foreach ($services as $service) { ?>
+                    <a href="/services/<?= htmlspecialchars($service['slug'], ENT_QUOTES, 'UTF-8') ?>">
+                        <div class="service">
+                            <div class="image">
+                                <img src="<?= BASE_URL . htmlspecialchars($service['service_icon'], ENT_QUOTES, 'UTF-8') ?>" alt="">
+                            </div>
+                            <div class="about">
+                                <p class="title mb-2"><?= htmlspecialchars($service['service_title'], ENT_QUOTES, 'UTF-8') ?></p>
+                                <p class="description"><?= substr($service['service_main_description'], 0, 40) ?></p>
+                                <button class="btn p-0">Read More</button>
+                            </div>
+                        </div>
+                    </a>
+                <?php } ?>
             </div>
-        </div>
     </section>
     <section class="explore-services">
         <div class="container pt-5 pb-5">

@@ -1,0 +1,21 @@
+RewriteEngine On
+RewriteBase /
+
+# Redirect /services?slug=auto-denting → /services/auto-denting
+RewriteCond %{QUERY_STRING} ^slug=(.+)$
+RewriteRule ^services$ services/%1? [R=301,L]
+
+# Rewrite /services/auto-denting → /services?slug=auto-denting
+RewriteRule ^services/(.+)$ services?slug=$1 [L]
+
+# Redirect /blog?slug=slug-name → /blog/slug-name
+RewriteCond %{QUERY_STRING} ^slug=(.+)$
+RewriteRule ^blog$ blog/%1? [R=301,L]
+
+# Rewrite /blog/slug-name → /blog?slug=slug-name
+RewriteRule ^blog/(.+)$ blog?slug=$1 [L]
+
+# Handle all other URLs through index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

@@ -30,6 +30,9 @@
 }
 
 .services-container {
+    a{
+        text-decoration: none;
+    }
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -38,7 +41,8 @@
         display: flex;
         padding: 20px;
         gap: 10px;
-        width: 32%;
+        // width: 32%;
+        width: 415px !important;
         background-color: #F2F2F2;
 
         .image {
@@ -46,6 +50,9 @@
         }
 
         .about {
+            .description{
+                color: $secondary-color;
+            }
 
             .title {
                 font-weight: bold;
